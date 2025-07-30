@@ -48,6 +48,7 @@ const Intro = () => {
               display: "inline-block",
             }}
             repeat={Infinity}
+            cursor={true}
           />
 
           <span>

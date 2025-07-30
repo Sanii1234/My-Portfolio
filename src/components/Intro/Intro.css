@@ -95,6 +95,23 @@
   left: 56%;
   filter: blur(72px);
 }
+.custom-cursor {
+  font-size: 3rem;
+  color: var(--orange);
+  animation: blinkCursor 1s steps(1) infinite;
+  margin-left: 2px;
+}
+
+@keyframes blinkCursor {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
 
 @media screen and (max-width: 480px) {
   .Intro {
