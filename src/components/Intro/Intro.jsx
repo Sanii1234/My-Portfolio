@@ -13,6 +13,8 @@ import Instagram from "../../img/instagram.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+import { TypeAnimation } from "react-type-animation";
+
 const Intro = () => {
   // Transition
   const transition = { duration: 2, type: "spring" };
@@ -28,7 +30,26 @@ const Intro = () => {
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <span>Ehsan Nazir</span>
+          <TypeAnimation
+            sequence={[
+              "Ehsan Nazir",
+              2000,
+              "Web Developer",
+              2000,
+              "Full Stack Developer",
+              2000,
+            ]}
+            wrapper="span"
+            speed={50}
+            style={{
+              color: "var(--orange)",
+              fontWeight: "bold",
+              fontSize: "3rem",
+              display: "inline-block",
+            }}
+            repeat={Infinity}
+          />
+
           <span>
             A frontend web developer with hands-on experience in building
             modern, responsive websites using technologies like React.js,
